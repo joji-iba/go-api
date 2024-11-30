@@ -5,22 +5,27 @@ Goモジュールの初期化
 go mod init <アプリ名>
 ```
 
-Docker起動
+コンテナ起動（go-dockerディレクトリ内で実行）
 ```
 make dc
 ```
 
-Docker停止
+コンテナ停止（go-dockerディレクトリ内で実行）
 ```
 make down
 ```
 
-ビルド
+コンテナビルド（go-dockerディレクトリ内で実行）
 ```
 make build
 ```
 
-サーバー起動
+Goビルド（appディレクトリ内で実行）
+```
+make build
+```
+
+サーバー起動（appディレクトリ内で実行）
 ```
 make server
 ```
