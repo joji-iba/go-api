@@ -5,24 +5,24 @@ Goモジュールの初期化
 go mod init <アプリ名>
 ```
 
-サーバー起動
-```
-go run main.go
-```
-
-ビルド
-```
-docker compose up --build
-```
-
 Docker起動
 ```
-docker compose up -d
+make dc
 ```
 
 Docker停止
 ```
-docker compose down
+make down
+```
+
+ビルド
+```
+make build
+```
+
+サーバー起動
+```
+make server
 ```
 
 エンドポイント：http://localhost:8080
